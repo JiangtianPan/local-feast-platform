@@ -1,0 +1,83 @@
+
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+
+const Navbar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const navLinks = [
+    { name: "主页", path: "/" },
+    { name: "菜单", path: "/menu" },
+    { name: "在线点单", path: "/order" },
+    { name: "预订", path: "/reservations" },
+    { name: "联系我们", path: "/contact" },
+  ];
+
+  return (
+    <nav className="bg-white shadow-md py-4 sticky top-0 z-50">
+      <div className="container mx-auto flex justify-between items-center">
+        <Link to="/" className="text-2xl font-serif font-bold text-restaurant-700">
+          地方风味
+        </Link>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center space-x-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              className="font-medium hover:text-restaurant-600 transition-colors"
+            >
+              {link.name}
+            </Link>
+          ))}
+          <Link to="/dashboard">
+            <Button variant="outline" className="border-restaurant-600 text-restaurant-600 hover:bg-restaurant-600 hover:text-white">
+              我的账户
+            </Button>
+          </Link>
+        </div>
+
+        {/* Mobile Navigation Button */}
+        <button
+          className="md:hidden text-gray-800"
+          onClick={toggleMobileMenu}
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+        >
+          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Navigation Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-white py-4 px-6 shadow-lg animate-fade-in">
+          <div className="flex flex-col space-y-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="font-medium py-2 hover:text-restaurant-600 transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Link to="/dashboard" onClick={() => setMobileMenuOpen(false)}>
+              <Button variant="outline" className="w-full border-restaurant-600 text-restaurant-600 hover:bg-restaurant-600 hover:text-white">
+                我的账户
+              </Button>
+            </Link>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
