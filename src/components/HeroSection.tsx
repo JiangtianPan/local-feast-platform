@@ -18,21 +18,21 @@ const HeroSection = () => {
       <div className="container mx-auto relative z-10">
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            品味传统 <br/>
-            <span className="text-restaurant-400">感受地方风味</span>
+            Taste Tradition <br/>
+            <span className="text-restaurant-400">Experience Local Flavors</span>
           </h1>
           <p className="text-xl mb-8">
-            我们用心烹制每一道菜，将本地传统与现代创新完美融合，为您带来独一无二的美食体验。
+            We carefully prepare every dish, perfectly blending local traditions with modern innovation to bring you a unique dining experience.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Link to="/menu">
               <Button className="bg-restaurant-600 hover:bg-restaurant-700 text-white px-8 py-6 text-lg rounded-md">
-                浏览菜单
+                View Menu
               </Button>
             </Link>
             <Link to="/reservations">
               <Button variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg rounded-md">
-                预订餐位
+                Reserve a Table
               </Button>
             </Link>
           </div>

@@ -12,18 +12,17 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: "主页", path: "/" },
-    { name: "菜单", path: "/menu" },
-    { name: "在线点单", path: "/order" },
-    { name: "预订", path: "/reservations" },
-    { name: "联系我们", path: "/contact" },
+    { name: "Home", path: "/" },
+    { name: "Menu & Order", path: "/menu" },
+    { name: "Reservations", path: "/reservations" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
     <nav className="bg-white shadow-md py-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-serif font-bold text-restaurant-700">
-          地方风味
+          Local Flavor
         </Link>
 
         {/* Desktop Navigation */}
@@ -39,7 +38,7 @@ const Navbar = () => {
           ))}
           <Link to="/dashboard">
             <Button variant="outline" className="border-restaurant-600 text-restaurant-600 hover:bg-restaurant-600 hover:text-white">
-              我的账户
+              My Account
             </Button>
           </Link>
         </div>
@@ -70,7 +69,7 @@ const Navbar = () => {
             ))}
             <Link to="/dashboard" onClick={() => setMobileMenuOpen(false)}>
               <Button variant="outline" className="w-full border-restaurant-600 text-restaurant-600 hover:bg-restaurant-600 hover:text-white">
-                我的账户
+                My Account
               </Button>
             </Link>
           </div>

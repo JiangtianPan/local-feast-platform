@@ -28,7 +28,7 @@ const DishCard = ({ dish, onAddToCart }: DishCardProps) => {
       <div className="p-4">
         <div className="flex justify-between items-center mb-2">
           <h3 className="text-lg font-bold">{dish.name}</h3>
-          <span className="text-restaurant-600 font-bold">¥{dish.price}</span>
+          <span className="text-restaurant-600 font-bold">${dish.price}</span>
         </div>
         <p className="text-gray-600 text-sm mb-3 h-12 overflow-hidden">
           {dish.description}
@@ -41,7 +41,7 @@ const DishCard = ({ dish, onAddToCart }: DishCardProps) => {
             onClick={() => onAddToCart(dish)}
             className="bg-restaurant-600 hover:bg-restaurant-700 text-white text-sm py-1"
           >
-            添加到购物车
+            Add to Cart
           </Button>
         </div>
       </div>

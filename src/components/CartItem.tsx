@@ -32,8 +32,8 @@ const CartItem = ({
       <div className="ml-4 flex-1">
         <h4 className="text-sm font-medium">{name}</h4>
         <div className="flex justify-between mt-1">
-          <p className="text-sm text-gray-500">¥{price}</p>
-          <p className="text-sm font-medium">¥{(price * quantity).toFixed(2)}</p>
+          <p className="text-sm text-gray-500">${price}</p>
+          <p className="text-sm font-medium">${(price * quantity).toFixed(2)}</p>
         </div>
         
         <div className="flex justify-between items-center mt-2">
