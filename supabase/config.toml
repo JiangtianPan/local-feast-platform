@@ -1,1 +1,8 @@
+
 project_id = "xllumxxuycduiqappdli"
+
+[functions.api-utils]
+verify_jwt = true
+
+[functions.process-payment]
+verify_jwt = true
