@@ -1,6 +1,4 @@
 
-import { Button } from "@/components/ui/button";
-
 interface Dish {
   id: number;
   name: string;
@@ -12,10 +10,9 @@ interface Dish {
 
 interface DishCardProps {
   dish: Dish;
-  onAddToCart: (dish: Dish) => void;
 }
 
-const DishCard = ({ dish, onAddToCart }: DishCardProps) => {
+const DishCard = ({ dish }: DishCardProps) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl">
       <div className="h-48 overflow-hidden">
@@ -33,16 +30,10 @@ const DishCard = ({ dish, onAddToCart }: DishCardProps) => {
         <p className="text-gray-600 text-sm mb-3 h-12 overflow-hidden">
           {dish.description}
         </p>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-center">
           <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs">
             {dish.category}
           </span>
-          <Button 
-            onClick={() => onAddToCart(dish)}
-            className="bg-restaurant-600 hover:bg-restaurant-700 text-white text-sm py-1"
-          >
-            Add to Cart
-          </Button>
         </div>
       </div>
     </div>
