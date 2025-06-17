@@ -36,11 +36,6 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <Link to="/dashboard">
-            <Button variant="outline" className="border-restaurant-600 text-restaurant-600 hover:bg-restaurant-600 hover:text-white">
-              My Account
-            </Button>
-          </Link>
         </div>
 
         {/* Mobile Navigation Button */}
@@ -67,11 +62,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Link to="/dashboard" onClick={() => setMobileMenuOpen(false)}>
-              <Button variant="outline" className="w-full border-restaurant-600 text-restaurant-600 hover:bg-restaurant-600 hover:text-white">
-                My Account
-              </Button>
-            </Link>
           </div>
         </div>
       )}
