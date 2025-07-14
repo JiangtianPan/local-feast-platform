@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-md py-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-serif font-bold text-restaurant-700">
-          Local Flavor
+          Tea Bay Sweet
         </Link>
 
         {/* Desktop Navigation */}

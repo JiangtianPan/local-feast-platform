@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-serif font-bold mb-4">Local Flavor</h3>
             <p className="mb-4 text-gray-300">
-              We offer authentic local cuisine, always using fresh ingredients and traditional cooking methods.
+              We offer delicious bubble teas, always using fresh ingredients and classical methods.
             </p>
             <div className="flex flex-col space-y-2 text-gray-300">
               <div className="flex items-center">
@@ -20,12 +20,13 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MapPin size={16} className="mr-2" />
-                <span>123 Main Street, City Center</span>
+                <span>820 Red River Road, unit 1b, Thunder Bay, ON, P7B 1K2</span>
               </div>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <Clock size={16} className="mr-2" />
-                <span>Mon-Sun: 10:00 - 22:00</span>
-              </div>
+                <span>Summer Time: Mon-Sat 11:00 - 21:00, Sun 11:00 - 17:00</span>
+                <span>Winter Time: Mon-Sat: 11:00 - 20:00, Sun 11:00 - 17:00</span>
+              </div> */}
             </div>
           </div>
 
@@ -53,23 +54,23 @@ const Footer = () => {
             <h3 className="text-xl font-serif font-bold mb-4">Opening Hours</h3>
             <ul className="space-y-2 text-gray-300">
               <li className="flex justify-between">
-                <span>Monday - Friday:</span>
-                <span>10:00 - 22:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Saturday:</span>
-                <span>11:00 - 23:00</span>
-              </li>
-              <li className="flex justify-between">
+                <span>[Summer Time] Monday - Saturday:</span>
+                <span>11:00 - 21:00</span>
                 <span>Sunday:</span>
-                <span>11:00 - 22:00</span>
+                <span>11:00 - 17:00</span>
+              </li>
+              <li className="flex justify-between">
+              <span>[Winter Time] Monday - Saturday:</span>
+                <span>11:00 - 20:00</span>
+                <span>Sunday:</span>
+                <span>11:00 - 17:00</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Local Flavor Restaurant. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Tea Bay Sweet. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -27,7 +27,7 @@ const AboutSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold font-serif mb-6">Our Story</h2>
             <div className="w-20 h-1 bg-restaurant-500 mb-6"></div>
             <p className="text-gray-600 mb-4">
-              Local Flavor Restaurant was established in 2003 by master chef Chen. As one of the earliest promoters of traditional cuisine in the area, we have always insisted on using the freshest local ingredients combined with traditional cooking techniques to bring authentic local delicacies to our customers.
+              Tea Bay Sweet was established in 2023. As one of the earliest bubble tea store in the area, we have always insisted on using the freshest local ingredients combined with classic bubble tea menu to bring authentic local delicacies to our customers.
             </p>
             <p className="text-gray-600 mb-6">
               For twenty years, we have continuously innovated our menu and enhanced the dining experience, winning the love and recognition of many diners. Today, we still hold true to our original aspiration, providing the most authentic flavors and the warmest service to every customer.
