@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import GoogleMap from "@/components/GoogleMap";
+import StaticMap from "@/components/StaticMap";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
@@ -57,10 +57,9 @@ const Contact = () => {
         <section className="py-12">
           <div className="container mx-auto">
             <h2 className="text-2xl font-bold font-serif mb-6 text-center">位置导航</h2>
-            <GoogleMap 
-              center={{ lat: 39.9042, lng: 116.4074 }}
-              zoom={15}
-              markerTitle="地方风味餐厅"
+            <StaticMap 
+              title="地方风味餐厅"
+              address="城市中心大街123号"
               className="w-full h-96"
             />
           </div>
