@@ -2,6 +2,8 @@ import { useState } from "react";
 import { MapPin, ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
 import { Button } from "./ui/button";
 import mapImage from "@/assets/restaurant-map.jpg";
+// 要使用你自己的地图图片，请将上面这行改为：
+// import mapImage from "@/assets/你的地图文件名.jpg";
 
 interface StaticMapProps {
   title?: string;
