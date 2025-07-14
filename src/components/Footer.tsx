@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Restaurant Info */}
           <div>
-            <h3 className="text-2xl font-serif font-bold mb-4">Local Flavor</h3>
+            <h3 className="text-2xl font-serif font-bold mb-4">Tea Bay Sweet</h3>
             <p className="mb-4 text-gray-300">
               We offer delicious bubble teas, always using fresh ingredients and classical methods.
             </p>
@@ -54,13 +54,15 @@ const Footer = () => {
             <h3 className="text-xl font-serif font-bold mb-4">Opening Hours</h3>
             <ul className="space-y-2 text-gray-300">
               <li className="flex justify-between">
-                <span>[Summer Time] Monday - Saturday:</span>
+              <span>[Summer Time]</span>
+                <span>Monday - Saturday:</span>
                 <span>11:00 - 21:00</span>
                 <span>Sunday:</span>
                 <span>11:00 - 17:00</span>
               </li>
               <li className="flex justify-between">
-              <span>[Winter Time] Monday - Saturday:</span>
+              <span>[Summer Time]</span>
+              <span>Monday - Saturday:</span>
                 <span>11:00 - 20:00</span>
                 <span>Sunday:</span>
                 <span>11:00 - 17:00</span>
