@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GoogleMap from "@/components/GoogleMap";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
@@ -55,16 +56,13 @@ const Contact = () => {
         {/* Map Section */}
         <section className="py-12">
           <div className="container mx-auto">
-            <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
-              {/* This would be replaced with an actual map integration */}
-              <div className="w-full h-full flex items-center justify-center bg-gray-300">
-                <div className="text-center">
-                  <MapPin size={48} className="mx-auto mb-2 text-restaurant-600" />
-                  <p className="text-gray-600">地图加载中...</p>
-                  <p className="text-gray-500 text-sm">(此处将集成地图)</p>
-                </div>
-              </div>
-            </div>
+            <h2 className="text-2xl font-bold font-serif mb-6 text-center">位置导航</h2>
+            <GoogleMap 
+              center={{ lat: 39.9042, lng: 116.4074 }}
+              zoom={15}
+              markerTitle="地方风味餐厅"
+              className="w-full h-96"
+            />
           </div>
         </section>
 
