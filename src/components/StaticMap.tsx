@@ -58,7 +58,7 @@ const StaticMap = ({
   };
 
   return (
-    <div className={`${className} relative rounded-lg overflow-hidden shadow-lg bg-gray-100`}>
+    <div className={`${className} relative rounded-lg overflow-hidden shadow-lg bg-muted`}>
       {/* Map Image Container */}
       <div 
         className="w-full h-full overflow-hidden cursor-move"
@@ -85,7 +85,7 @@ const StaticMap = ({
           onClick={handleZoomIn}
           size="sm"
           variant="secondary"
-          className="w-10 h-10 p-0 bg-white/90 hover:bg-white border shadow-md"
+          className="w-10 h-10 p-0"
           disabled={zoom >= 3}
         >
           <ZoomIn size={16} />
@@ -94,7 +94,7 @@ const StaticMap = ({
           onClick={handleZoomOut}
           size="sm"
           variant="secondary"
-          className="w-10 h-10 p-0 bg-white/90 hover:bg-white border shadow-md"
+          className="w-10 h-10 p-0"
           disabled={zoom <= 1}
         >
           <ZoomOut size={16} />
@@ -103,21 +103,21 @@ const StaticMap = ({
           onClick={handleReset}
           size="sm"
           variant="secondary"
-          className="w-10 h-10 p-0 bg-white/90 hover:bg-white border shadow-md"
+          className="w-10 h-10 p-0"
         >
           <RotateCcw size={16} />
         </Button>
       </div>
 
       {/* Location Info Overlay */}
-      <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-md max-w-xs">
+      <div className="absolute bottom-4 left-4 bg-card/95 backdrop-blur-sm rounded-lg p-4 shadow-md max-w-xs border">
         <div className="flex items-start">
-          <div className="bg-red-100 rounded-full p-2 mr-3 flex-shrink-0">
-            <MapPin className="text-red-600" size={20} />
+          <div className="bg-primary/10 rounded-full p-2 mr-3 flex-shrink-0">
+            <MapPin className="text-primary" size={20} />
           </div>
           <div>
-            <h3 className="font-bold text-sm mb-1">{title}</h3>
-            <p className="text-gray-600 text-xs">{address}</p>
+            <h3 className="font-bold text-sm mb-1 text-card-foreground">{title}</h3>
+            <p className="text-muted-foreground text-xs">{address}</p>
           </div>
         </div>
       </div>

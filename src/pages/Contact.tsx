@@ -140,7 +140,7 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-restaurant-500 focus:border-restaurant-500"
+                      className="w-full px-4 py-2 border border-input rounded-md focus:ring-ring focus:border-ring bg-background text-foreground"
                     />
                   </div>
                   
@@ -155,7 +155,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-restaurant-500 focus:border-restaurant-500"
+                      className="w-full px-4 py-2 border border-input rounded-md focus:ring-ring focus:border-ring bg-background text-foreground"
                     />
                   </div>
                   
@@ -170,7 +170,7 @@ const Contact = () => {
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-restaurant-500 focus:border-restaurant-500"
+                      className="w-full px-4 py-2 border border-input rounded-md focus:ring-ring focus:border-ring bg-background text-foreground"
                     />
                   </div>
                   
@@ -185,7 +185,7 @@ const Contact = () => {
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-restaurant-500 focus:border-restaurant-500"
+                      className="w-full px-4 py-2 border border-input rounded-md focus:ring-ring focus:border-ring bg-background text-foreground"
                     ></textarea>
                   </div>
                   
