@@ -12,8 +12,8 @@ interface StaticMapProps {
 }
 
 const StaticMap = ({ 
-  title = "地方风味餐厅",
-  address = "城市中心大街123号",
+  title = "Tea Bay Sweet",
+  address = "820 Red River Road unit 1b",
   className = "w-full h-96"
 }: StaticMapProps) => {
   const [zoom, setZoom] = useState(1);
@@ -69,7 +69,7 @@ const StaticMap = ({
       >
         <img
           src={mapImage}
-          alt="餐厅位置地图"
+          alt="Map"
           className="w-full h-full object-cover transition-transform duration-200"
           style={{
             transform: `scale(${zoom}) translate(${position.x / zoom}px, ${position.y / zoom}px)`,
