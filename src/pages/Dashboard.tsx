@@ -15,25 +15,25 @@ const Dashboard = () => {
       id: "ORD-2023-001",
       date: "2023-05-01",
       time: "18:30",
-      items: ["水煮鱼", "锅包肉", "小米粥"],
+      items: ["Boiled Fish", "Sweet and Sour Pork", "Millet Porridge"],
       total: 128,
-      status: "已完成"
+      status: "Completed"
     },
     {
       id: "ORD-2023-002",
       date: "2023-05-10",
       time: "19:45",
-      items: ["红烧狮子头", "皮蛋豆腐", "小米粥"],
+      items: ["Braised Lion's Head", "Century Egg Tofu", "Millet Porridge"],
       total: 78,
-      status: "已完成"
+      status: "Completed"
     },
     {
       id: "ORD-2023-003",
       date: "2023-05-20",
       time: "12:15",
-      items: ["宫保鸡丁", "凉拌黄瓜", "手工馒头"],
+      items: ["Kung Pao Chicken", "Cucumber Salad", "Handmade Steamed Buns"],
       total: 63,
-      status: "配送中"
+      status: "Out for delivery"
     }
   ];
   
@@ -44,21 +44,21 @@ const Dashboard = () => {
       date: "2023-06-05",
       time: "19:00",
       guests: 4,
-      status: "已确认"
+      status: "Confirmed"
     },
     {
       id: "RES-2023-002",
       date: "2023-06-15",
       time: "18:30",
       guests: 2,
-      status: "待确认"
+      status: "Pending"
     },
     {
       id: "RES-2023-003",
       date: "2023-06-30",
       time: "20:00",
       guests: 6,
-      status: "已确认"
+      status: "Confirmed"
     }
   ];
   
@@ -71,9 +71,9 @@ const Dashboard = () => {
         {/* Hero Section */}
         <section className="bg-restaurant-700 text-white py-16">
           <div className="container mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-bold font-serif mb-4">我的账户</h1>
+            <h1 className="text-3xl md:text-4xl font-bold font-serif mb-4">My Account</h1>
             <p className="max-w-2xl mx-auto">
-              查看您的订单历史和预订信息
+              View your order history and reservation information
             </p>
           </div>
         </section>
@@ -86,18 +86,18 @@ const Dashboard = () => {
                 <div className="border-b">
                   <div className="px-6">
                     <TabsList className="grid grid-cols-2">
-                      <TabsTrigger value="orders" onClick={() => setActiveTab("orders")}>订单历史</TabsTrigger>
-                      <TabsTrigger value="reservations" onClick={() => setActiveTab("reservations")}>我的预订</TabsTrigger>
+                       <TabsTrigger value="orders" onClick={() => setActiveTab("orders")}>Order History</TabsTrigger>
+                       <TabsTrigger value="reservations" onClick={() => setActiveTab("reservations")}>My Reservations</TabsTrigger>
                     </TabsList>
                   </div>
                 </div>
                 
                 <TabsContent value="orders" className="p-6">
                   <div className="flex justify-between items-center mb-6">
-                    <h2 className="text-2xl font-bold font-serif">您的订单</h2>
+                    <h2 className="text-2xl font-bold font-serif">Your Orders</h2>
                     <Link to="/order">
                       <Button className="bg-restaurant-600 hover:bg-restaurant-700 text-white">
-                        再次下单
+                        Order Again
                       </Button>
                     </Link>
                   </div>
@@ -129,13 +129,13 @@ const Dashboard = () => {
                             
                             <div className="flex justify-between items-center mt-3 md:mt-0">
                               <div className="mr-4">
-                                <span className="block text-gray-500 text-sm">总计</span>
+                                <span className="block text-gray-500 text-sm">Total</span>
                                 <span className="font-bold">¥{order.total}</span>
                               </div>
                               <div>
                                 <span
                                   className={`px-3 py-1 rounded-full text-xs ${
-                                    order.status === "已完成"
+                                    order.status === "Completed"
                                       ? "bg-green-100 text-green-800"
                                       : "bg-yellow-100 text-yellow-800"
                                   }`}
@@ -151,10 +151,10 @@ const Dashboard = () => {
                   ) : (
                     <div className="text-center py-12">
                       <ShoppingCart size={48} className="mx-auto text-gray-300 mb-4" />
-                      <p className="text-gray-500 mb-4">您还没有订单</p>
+                      <p className="text-gray-500 mb-4">You don't have any orders yet</p>
                       <Link to="/order">
                         <Button className="bg-restaurant-600 hover:bg-restaurant-700 text-white">
-                          立即点餐
+                          Order Now
                         </Button>
                       </Link>
                     </div>
@@ -163,10 +163,10 @@ const Dashboard = () => {
                 
                 <TabsContent value="reservations" className="p-6">
                   <div className="flex justify-between items-center mb-6">
-                    <h2 className="text-2xl font-bold font-serif">您的预订</h2>
+                    <h2 className="text-2xl font-bold font-serif">Your Reservations</h2>
                     <Link to="/reservations">
                       <Button className="bg-restaurant-600 hover:bg-restaurant-700 text-white">
-                        新预订
+                        New Reservation
                       </Button>
                     </Link>
                   </div>
@@ -192,14 +192,14 @@ const Dashboard = () => {
                                 </span>
                               </p>
                               <p className="text-sm text-gray-600">
-                                {reservation.guests}位客人
+                                {reservation.guests} guests
                               </p>
                             </div>
                             
                             <div className="flex items-center mt-3 md:mt-0">
                               <span
                                 className={`px-3 py-1 rounded-full text-xs ${
-                                  reservation.status === "已确认"
+                                  reservation.status === "Confirmed"
                                     ? "bg-green-100 text-green-800"
                                     : "bg-yellow-100 text-yellow-800"
                                 }`}
@@ -214,10 +214,10 @@ const Dashboard = () => {
                   ) : (
                     <div className="text-center py-12">
                       <Calendar size={48} className="mx-auto text-gray-300 mb-4" />
-                      <p className="text-gray-500 mb-4">您还没有预订</p>
+                      <p className="text-gray-500 mb-4">You don't have any reservations yet</p>
                       <Link to="/reservations">
                         <Button className="bg-restaurant-600 hover:bg-restaurant-700 text-white">
-                          立即预订
+                          Make Reservation
                         </Button>
                       </Link>
                     </div>

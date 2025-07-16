@@ -28,9 +28,9 @@ const Order = () => {
         {/* Hero Section */}
         <section className="bg-restaurant-700 text-white py-16">
           <div className="container mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-bold font-serif mb-4">在线订餐</h1>
+            <h1 className="text-3xl md:text-4xl font-bold font-serif mb-4">Online Ordering</h1>
             <p className="max-w-2xl mx-auto">
-              通过 Uber Eats 轻松订购美食，快速配送到您门前
+              Easily order delicious food through Uber Eats, delivered quickly to your door
             </p>
           </div>
         </section>
@@ -41,9 +41,9 @@ const Order = () => {
             <div className="max-w-2xl mx-auto">
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <Truck className="w-16 h-16 text-restaurant-600 mx-auto mb-6" />
-                <h2 className="text-2xl font-bold font-serif mb-4">即将跳转到 Uber Eats</h2>
+                <h2 className="text-2xl font-bold font-serif mb-4">Redirecting to Uber Eats</h2>
                 <p className="text-gray-600 mb-6">
-                  页面将在 3 秒后自动跳转到我们的 Uber Eats 订餐页面。您也可以点击下方按钮立即跳转。
+                  The page will automatically redirect to our Uber Eats ordering page in 3 seconds. You can also click the button below to jump immediately.
                 </p>
                 
                 <Button
@@ -51,33 +51,33 @@ const Order = () => {
                   className="bg-restaurant-600 hover:bg-restaurant-700 text-white px-8 py-3 text-lg"
                 >
                   <ExternalLink className="mr-2" size={20} />
-                  立即在 Uber Eats 订餐
+                  Order Now on Uber Eats
                 </Button>
 
                 <div className="mt-8 p-6 bg-gray-50 rounded-lg">
-                  <h3 className="text-lg font-semibold mb-4">为什么选择 Uber Eats？</h3>
+                  <h3 className="text-lg font-semibold mb-4">Why Choose Uber Eats?</h3>
                   <ul className="text-left space-y-2 text-gray-600">
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-restaurant-600 rounded-full mr-3"></div>
-                      快速配送，通常 30-45 分钟内送达
+                      Fast delivery, usually arrives within 30-45 minutes
                     </li>
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-restaurant-600 rounded-full mr-3"></div>
-                      实时订单跟踪，随时了解配送状态
+                      Real-time order tracking to know delivery status
                     </li>
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-restaurant-600 rounded-full mr-3"></div>
-                      多种支付方式，安全便捷
+                      Multiple payment methods, safe and convenient
                     </li>
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-restaurant-600 rounded-full mr-3"></div>
-                      专业配送团队，确保食品新鲜
+                      Professional delivery team ensuring fresh food
                     </li>
                   </ul>
                 </div>
 
                 <p className="text-sm text-gray-500 mt-6">
-                  如果页面没有自动跳转，请点击上方按钮或直接访问我们的 Uber Eats 页面
+                  If the page doesn't redirect automatically, please click the button above or visit our Uber Eats page directly
                 </p>
               </div>
             </div>

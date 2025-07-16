@@ -29,7 +29,7 @@ const Contact = () => {
     // Simulate API call
     setTimeout(() => {
       setLoading(false);
-      toast.success("消息已发送！我们会尽快回复您。");
+      toast.success("Message sent! We will reply to you as soon as possible.");
       setFormData({
         name: "",
         email: "",
@@ -194,7 +194,7 @@ const Contact = () => {
                     className="w-full bg-restaurant-600 hover:bg-restaurant-700 text-white py-2.5"
                     disabled={loading}
                   >
-                    {loading ? "loading..." : "message sending"}
+                    {loading ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </div>
