@@ -3,7 +3,7 @@ import { MapPin, ZoomIn, ZoomOut, RotateCcw, Upload, Loader2 } from "lucide-reac
 import { Button } from "./ui/button";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
-import mapImage from "@/assets/restaurant-map.jpg";
+import mapImage from "@/assets/map.png";
 
 interface StaticMapWithUploadProps {
   title?: string;
