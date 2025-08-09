@@ -5,8 +5,9 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
 
-import mangoCoconut from '@/assets/menu/mangoCoconut.jpg';
-import strawberryCoconut from '@/assets/menu/strawberryCoconut.jpg';
+import mangoCoconut from '@/assets/menu/mango_coconut.jpg';
+import pineappleCoconut from '@/assets/menu/pineapple_machiato.jpg';
+import strawberryCoconut from '@/assets/menu/strawberry_coconut.jpg';
 import taroMatcha from '@/assets/menu/taro_matcha.jpg';
 
 import mangoMacchiato from '@/assets/menu/mango_matchiato.jpg';
@@ -16,7 +17,7 @@ import pineappleMacchiato from '@/assets/menu/pineapple_machiato.jpg';
 import matchaMacchiato from '@/assets/menu/matcha_machiato.jpg';
 import chocolateMacchiato from '@/assets/menu/chocalate_machiato.jpg';
 
-import signatureMilkTea from '@/assets/menu/signature_milktea.jpg;
+import signatureMilkTea from '@/assets/menu/signature_milktea.jpg';
 import jasmineMilkTea from '@/assets/menu/jasmin_milk_green_tea.jpg';
 import brownMilkTea from '@/assets/menu/brown_sugar_pearl.jpg';
 import puddingMilkTea from '@/assets/menu/pudding_milktea.jpg';
