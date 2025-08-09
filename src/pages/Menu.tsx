@@ -419,8 +419,8 @@ const Menu = () => {
                       />
                     </div>
                     <div className="p-4">
-                      <div className="flex justify-between items-center mb-2">
-                        <h3 className="text-lg font-bold">{dish.name}</h3>
+                      <div className="mb-2">
+                        <h3 className="text-lg font-bold mb-1">{dish.name}</h3>
                         <span className="text-restaurant-600 font-bold">${dish.price}</span>
                       </div>
                       <p className="text-gray-600 text-sm mb-3 h-12 overflow-hidden">
