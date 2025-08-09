@@ -5,11 +5,53 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
 
+import mangoCoconut from '@/assets/menu/mangoCoconut.jpg';
+import strawberryCoconut from '@/assets/menu/strawberryCoconut.jpg';
+import taroMatcha from '@/assets/menu/taro_matcha.jpg';
+
+import mangoMacchiato from '@/assets/menu/mango_matchiato.jpg';
+import grapeMacchiato from '@/assets/menu/grape_machiato.jpg';
+import strawberryMacchiato from '@/assets/menu/strawberry_machiato.jpg';
+import pineappleMacchiato from '@/assets/menu/pineapple_machiato.jpg';
+import matchaMacchiato from '@/assets/menu/matcha_machiato.jpg';
+import chocolateMacchiato from '@/assets/menu/chocalate_machiato.jpg';
+
+import signatureMilkTea from '@/assets/menu/signature_milktea.jpg;
+import jasmineMilkTea from '@/assets/menu/jasmin_milk_green_tea.jpg';
+import brownMilkTea from '@/assets/menu/brown_sugar_pearl.jpg';
+import puddingMilkTea from '@/assets/menu/pudding_milktea.jpg';
+import grassMilkTea from '@/assets/menu/grass_jelly.jpg';
+import readbeanMilkTea from '@/assets/menu/redbean_milktea.jpg';
+import coconutjellyMilkTea from '@/assets/menu/coconut_jelly.jpg';
+import twoGirls from '@/assets/menu/coconut_jelly.jpg';
+import threeBoys from '@/assets/menu/three_boys.jpg';
+import taroMilkTea from '@/assets/menu/taro_bubble.jpg';
+import taroGreenTea from '@/assets/menu/taro_bubble.jpg';
+
+import jasmineMilk from '@/assets/menu/jasmin_milk_green_tea.jpg';
+import honeyMilk from '@/assets/menu/jasmin_milk_green_tea.jpg';
+import muddyMilk from '@/assets/menu/muddy_freshmilk.jpg';
+import matchaMilk from '@/assets/menu/matcha_brown_sugar.jpg';
+import strawberryMilk from '@/assets/menu/strawnberry_matcha.jpg';
+
+import greenLemon from '@/assets/menu/lemon_green_tea.jpg';
+import blackLemon from '@/assets/menu/lemon_black_tea.jpg';
+import passionfruitLemon from '@/assets/menu/passion_fruit_lemon.jpg';
+import strawberryLemon from '@/assets/menu/strawberry_lemon.jpg';
+import mangoLemon from '@/assets/menu/mango_lemon_tea.jpg';
+
+import passionfruitTea from '@/assets/menu/passion_fruit.jpg';
+import orangeTea from '@/assets/menu/orange_ice_tea.jpg';
+import grapeTea from '@/assets/menu/grape_machiato.jpg';
+import mangoTea from '@/assets/menu/mango_lemon_tea.jpg';
+import strawberryTea from '@/assets/menu/strawberry_lemon.jpg';
+import mangoPomelo from '@/assets/menu/mango_pamelo.jpg';
+
 interface Dish {
   id: number;
   name: string;
   description: string;
-  price: number;
+  price: string;
   image: string;
   category: string;
 }
@@ -19,75 +61,299 @@ const Menu = () => {
   const allDishes: Dish[] = [
     {
       id: 1,
-      name: "Spicy Boiled Fish",
-      description: "Fresh fish with spicy chili oil, flavorful and aromatic",
-      price: 68,
-      image: "https://images.unsplash.com/photo-1623689046286-01d812215f98?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Hot Dishes"
+      name: "Fresh Mango Coconut",
+      description: "210 cal (M) / 280 cal (L)",
+      price: "6.09(M) /6.69(L)",
+      image: mangoCoconut,
+      category: "Fresh Coconut Series"
     },
     {
       id: 2,
-      name: "Braised Lion's Head Meatballs",
-      description: "Selected pork, handmade meatballs, slow-braised to perfection",
-      price: 48,
-      image: "https://images.unsplash.com/photo-1541833000669-8dce2f9b5849?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Hot Dishes"
+      name: "Fresh Pineapple Coconut",
+      description: "",
+      price: "6.09(M) /6.69(L)",
+      image: pineappleCoconut,
+      category: "Fresh Coconut Series"
     },
     {
       id: 3,
-      name: "Sweet and Sour Pork",
-      description: "Crispy on the outside, tender inside with a perfect balance of sweet and sour",
-      price: 52,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Hot Dishes"
+      name: "Fresh Strawberry Coconut",
+      description: "",
+      price: "6.09(M) /6.69(L)",
+      image: strawberryCoconut,
+      category: "Fresh Coconut Series"
     },
     {
       id: 4,
-      name: "Kung Pao Chicken",
-      description: "Chicken, peanuts, and chili peppers, a classic Sichuan dish",
-      price: 42,
-      image: "https://images.unsplash.com/photo-1525755662778-989d0524087e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Hot Dishes"
+      name: "Taro Matcha Coconut",
+      description: "",
+      price: "6.29(M) /6.89(L)",
+      image: taroMatcha,
+      category: "Fresh Coconut Series"
     },
     {
       id: 5,
-      name: "Cucumber Salad",
-      description: "Crisp and refreshing appetizer",
-      price: 18,
-      image: "https://images.unsplash.com/photo-1552825896-a4ea3616668c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Cold Dishes"
+      name: "Fresh Mango Macchiato",
+      description: "",
+      price: "5.99(M) /6.59(L)",
+      image: mangoMacchiato,
+      category: "Cheese Fresh Fruit Series"
     },
     {
       id: 6,
-      name: "Century Egg Tofu",
-      description: "Traditional appetizer with silky texture",
-      price: 22,
-      image: "https://images.unsplash.com/photo-1604908177453-7462950a6a3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Cold Dishes"
+      name: "Grape Macchiato",
+      description: "",
+      price: "5.99(M) /6.59(L)",
+      image: grapeMacchiato,
+      category: "Cheese Fresh Fruit Series"
     },
     {
       id: 7,
-      name: "Millet Porridge",
-      description: "Selected millet, cooked to soft and sweet perfection",
-      price: 8,
-      image: "https://images.unsplash.com/photo-1612966869328-91f67b36aa88?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Staples"
+      name: "Strawberry Macchiato",
+      description: "",
+      price: "5.99(M) /6.59(L)",
+      image: strawberryMacchiato,
+      category: "Cheese Fresh Fruit Series"
     },
     {
       id: 8,
-      name: "Handmade Steamed Buns",
-      description: "Traditional handmade, fluffy and delicious",
-      price: 3,
-      image: "https://images.unsplash.com/photo-1529042410759-48171276cdb8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Staples"
+      name: "Pineapple Macchiato",
+      description: "",
+      price: "5.99(M) /6.59(L)",
+      image: pineappleMacchiato,
+      category: "Cheese Fresh Fruit Series"
     },
     {
       id: 9,
-      name: "Yogurt Fruit Salad",
-      description: "Fresh fruits with yogurt, healthy and delicious",
-      price: 28,
-      image: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Desserts"
+      name: "Matcha Macchiato",
+      description: "",
+      price: "5.99(M) /6.59(L)",
+      image: matchaMacchiato,
+      category: "Cheese Fresh Fruit Series"
+    },
+    {
+      id: 10,
+      name: "Black Chololate Macchiato",
+      description: "",
+      price: "5.99(M) /6.59(L)",
+      image: chocolateMacchiato,
+      category: "Cheese Fresh Fruit Series"
+    },
+    {
+      id: 11,
+      name: "Signature Milk Tea",
+      description: "",
+      price: "5.29(M) /5.99(L)",
+      image: signatureMilkTea,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 12,
+      name: "Jasmine Milk Green Tea",
+      description: "",
+      price: "5.29(M) /5.99(L)",
+      image: jasmineMilkTea,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 13,
+      name: "Brown Sugar Pearl Milk Tea",
+      description: "",
+      price: "5.79(M) /6.39(L)",
+      image: brownMilkTea,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 14,
+      name: "Pudding Milk Tea",
+      description: "",
+      price: "5.59(M) /6.19(L)",
+      image: puddingMilkTea,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 15,
+      name: "Grass Jelly Milk Tea",
+      description: "",
+      price: "5.59(M) /6.19(L)",
+      image: grassMilkTea,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 16,
+      name: "Red Bean Milk Tea",
+      description: "",
+      price: "5.59(M) /6.19(L)",
+      image: readbeanMilkTea,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 17,
+      name: "Coconut Jelly Milk Tea",
+      description: "",
+      price: "5.79(M) /6.39(L)",
+      image: coconutjellyMilkTea,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 18,
+      name: "2 Girls",
+      description: "",
+      price: "5.89(M) /6.49(L)",
+      image: twoGirls,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 19,
+      name: "3 Boys",
+      description: "",
+      price: "5.99(M) /6.59(L)",
+      image: threeBoys,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 20,
+      name: "Taro Bubble Milk Tea",
+      description: "",
+      price: "5.89(M) /6.49(L)",
+      image: taroMilkTea,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 21,
+      name: "Taro Bubble Milk Green Tea",
+      description: "",
+      price: "5.89(M) /6.49(L)",
+      image: taroGreenTea,
+      category: "Signature Milk Tea Series"
+    },
+    {
+      id: 22,
+      name: "Jasmine Fresh Milk Tea",
+      description: "",
+      price: "5.89(M) /6.49(L)",
+      image: jasmineMilk,
+      category: "Fresh Milk Tea Series"
+    },
+    {
+      id: 23,
+      name: "Honey Fresh Milk Tea",
+      description: "",
+      price: "5.89(M) /6.49(L)",
+      image: honeyMilk,
+      category: "Fresh Milk Tea Series"
+    },
+    {
+      id: 24,
+      name: "Muddy Fresh Milk Tea (Cocoa)",
+      description: "",
+      price: "6.09(M) /6.69(L)",
+      image: muddyMilk,
+      category: "Fresh Milk Tea Series"
+    },
+    {
+      id: 25,
+      name: "Matcha Brown Sugar Fresh Milk",
+      description: "",
+      price: "6.09(M) /6.69(L)",
+      image: matchaMilk,
+      category: "Fresh Milk Tea Series"
+    },
+    {
+      id: 26,
+      name: "Strawberry Matcha Fresh Milk",
+      description: "",
+      price: "6.09(M) /6.69(L)",
+      image: strawberryMilk,
+      category: "Fresh Milk Tea Series"
+    },
+    {
+      id: 27,
+      name: "Lemon Green Tea",
+      description: "",
+      price: "4.79(M) /5.39(L)",
+      image: greenLemon,
+      category: "Lemon Tea Series"
+    },
+    {
+      id: 28,
+      name: "Lemon Black Tea",
+      description: "",
+      price: "4.79(M) /5.39(L)",
+      image: blackLemon,
+      category: "Lemon Tea Series"
+    },
+    {
+      id: 29,
+      name: "Passion Fruit Lemon Tea",
+      description: "",
+      price: "5.29(M) /5.89(L)",
+      image: passionfruitLemon,
+      category: "Lemon Tea Series"
+    },
+    {
+      id: 30,
+      name: "Strawberry Lemon Tea",
+      description: "",
+      price: "5.29(M) /5.89(L)",
+      image: strawberryLemon,
+      category: "Lemon Tea Series"
+    },
+    {
+      id: 31,
+      name: "Mango Lemon Tea",
+      description: "",
+      price: "5.29(M) /5.89(L)",
+      image: mangoLemon,
+      category: "Lemon Tea Series"
+    },
+    {
+      id: 32,
+      name: "Passion Fruit Tea",
+      description: "",
+      price: "5.89(M) /6.49(L)",
+      image: passionfruitTea,
+      category: "Fresh Fruit Tea Series"
+    },
+    {
+      id: 33,
+      name: "Orange Ice Tea",
+      description: "",
+      price: "5.49(M) /6.09(L)",
+      image: orangeTea,
+      category: "Fresh Fruit Tea Series"
+    },
+    {
+      id: 34,
+      name: "Grape Ice Tea",
+      description: "",
+      price: "5.49(M) /6.09(L)",
+      image: grapeTea,
+      category: "Fresh Fruit Tea Series"
+    },
+    {
+      id: 35,
+      name: "Mango Ice Tea",
+      description: "",
+      price: "5.49(M) /6.09(L)",
+      image: mangoTea,
+      category: "Fresh Fruit Tea Series"
+    },
+    {
+      id: 36,
+      name: "Strawberry Ice Tea",
+      description: "",
+      price: "5.49(M) /6.09(L)",
+      image: strawberryTea,
+      category: "Fresh Fruit Tea Series"
+    },
+    {
+      id: 37,
+      name: "Mango Pomelo Sago",
+      description: "",
+      price: "5.89(M) /6.49(L)",
+      image: mangoPomelo,
+      category: "Fresh Fruit Tea Series"
     }
   ];
 
