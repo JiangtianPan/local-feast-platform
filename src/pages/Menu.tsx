@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Search } from "lucide-react";
+
 
 import mangoCoconut from '@/assets/menu/mango_coconut.jpg';
 import pineappleCoconut from '@/assets/menu/pineapple_machiato.jpg';
@@ -358,32 +358,15 @@ const Menu = () => {
     }
   ];
 
-  const categories = ["All", ...Array.from(new Set(allDishes.map(dish => dish.category)))];
+  const categories = Array.from(new Set(allDishes.map(dish => dish.category)));
   
-  const [activeCategory, setActiveCategory] = useState("All");
-  const [searchTerm, setSearchTerm] = useState("");
+  const [activeCategory, setActiveCategory] = useState(categories[0]);
   const [filteredDishes, setFilteredDishes] = useState<Dish[]>(allDishes);
 
   useEffect(() => {
-    let result = allDishes;
-    
-    // Filter by category
-    if (activeCategory !== "All") {
-      result = result.filter(dish => dish.category === activeCategory);
-    }
-    
-    // Filter by search term
-    if (searchTerm) {
-      const term = searchTerm.toLowerCase();
-      result = result.filter(
-        dish => 
-          dish.name.toLowerCase().includes(term) || 
-          dish.description.toLowerCase().includes(term)
-      );
-    }
-    
+    const result = allDishes.filter(dish => dish.category === activeCategory);
     setFilteredDishes(result);
-  }, [activeCategory, searchTerm]);
+  }, [activeCategory]);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -402,9 +385,9 @@ const Menu = () => {
         {/* Menu Section */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto">
-            {/* Search and Filter */}
-            <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-              <div className="flex overflow-x-auto pb-2 mb-4 md:mb-0 gap-2">
+            {/* Category Filter */}
+            <div className="flex justify-center mb-8">
+              <div className="flex overflow-x-auto pb-2 gap-2">
                 {categories.map(category => (
                   <Button
                     key={category}
@@ -419,17 +402,6 @@ const Menu = () => {
                     {category}
                   </Button>
                 ))}
-              </div>
-              
-              <div className="relative w-full md:w-64">
-                <input
-                  type="text"
-                  placeholder="Search dishes..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-restaurant-500 focus:border-restaurant-500"
-                />
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
               </div>
             </div>
 
