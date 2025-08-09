@@ -58,6 +58,7 @@ interface Dish {
 }
 
 const Menu = () => {
+  console.log("Menu component loaded - no searchTerm references");
   // Mock data for menu items
   const allDishes: Dish[] = [
     {
