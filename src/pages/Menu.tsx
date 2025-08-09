@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
+import mangoCoconutImage from "@/assets/menu/mangoCoconut.jpg";
 
 interface Dish {
   id: number;
@@ -83,10 +84,10 @@ const Menu = () => {
     },
     {
       id: 9,
-      name: "Yogurt Fruit Salad",
-      description: "Fresh fruits with yogurt, healthy and delicious",
-      price: 28,
-      image: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      name: "芒果椰浆西米露",
+      description: "新鲜芒果配椰浆西米，热带风味浓郁，口感丰富",
+      price: 32,
+      image: mangoCoconutImage,
       category: "Desserts"
     }
   ];
