@@ -2,11 +2,15 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
+import strawberryCoconut from '@/assets/menu/strawberry_coconut.jpg';
+import brownMilkTea from '@/assets/menu/brown_sugar_pearl.jpg';
+import matchaMilk from '@/assets/menu/matcha_brown_sugar.jpg';
+
 interface Dish {
   id: number;
   name: string;
   description: string;
-  price: number;
+  price: string;
   image: string;
   category: string;
 }
@@ -16,27 +20,27 @@ const FeaturedDishes = () => {
   const featuredDishes: Dish[] = [
     {
       id: 1,
-      name: "Spicy Boiled Fish",
-      description: "Fresh fish with spicy chili oil, flavorful and aromatic",
-      price: 68,
-      image: "https://images.unsplash.com/photo-1623689046286-01d812215f98?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Main Course"
+      name: "Fresh Strawberry Coconut",
+      description: "",
+      price: "6.29(M) /6.89(L)",
+      image: strawberryCoconut,
+      category: "Fresh Coconut Series"
     },
     {
       id: 2,
-      name: "Braised Lion's Head Meatballs",
-      description: "Selected pork, handmade meatballs, slow-braised to perfection",
-      price: 48,
-      image: "https://images.unsplash.com/photo-1541833000669-8dce2f9b5849?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Main Course"
+      name: "Brown Sugar Pearl Milk Tea",
+      description: "",
+      price: "5.79(M) /6.39(L)",
+      image: brownMilkTea,
+      category: "Signature Milk Tea Series"
     },
     {
       id: 3,
-      name: "Sweet and Sour Pork",
-      description: "Crispy on the outside, tender inside with a perfect balance of sweet and sour",
-      price: 52,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Main Course"
+      name: "Matcha Brown Sugar Fresh Milk",
+      description: "",
+      price: "6.09(M) /6.69(L)",
+      image: matchaMilk,
+      category: "Fresh Milk Tea Series"
     }
   ];
 
@@ -44,10 +48,10 @@ const FeaturedDishes = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-serif">Signature Dishes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-serif">Top Sellers</h2>
           <div className="w-24 h-1 bg-restaurant-500 mx-auto mt-4 mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            These are our most popular specialty dishes, each one created with our chef's dedication and creativity.
+            These are our most popular drinks, each one created with our chef's dedication and creativity.
           </p>
         </div>
 
