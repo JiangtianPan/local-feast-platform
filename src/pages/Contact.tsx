@@ -117,8 +117,8 @@ const Contact = () => {
                       <p className="text-gray-600">Monday - Saturday: 11:00 - 21:00</p>
                       <p className="text-gray-600">Sunday: 11:00 - 17:00</p>
                       <p className="text-gray-600">Winter Time</p>
-                      <p className="text-gray-600">Monday - Saturday: 11:00 - 20:00</p>
-                      <p className="text-gray-600">Sunday: 11:00 - 17:00</p>
+                      <p className="text-gray-600">Monday - Saturday: 12:00 - 20:00</p>
+                      <p className="text-gray-600">Sunday: 12:00 - 17:00</p>
                     </div>
                   </div>
                 </div>
