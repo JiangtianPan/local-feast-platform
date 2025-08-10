@@ -2,6 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
+import menu from "@/assets/menu/menu.jpeg"
+
 const AboutSection = () => {
   return (
     <section className="py-16">
@@ -11,15 +13,15 @@ const AboutSection = () => {
           <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                src={menu} 
                 alt="Restaurant Interior" 
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-white p-4 shadow-lg rounded-lg w-40 h-40 flex flex-col justify-center items-center text-center hidden md:flex">
+            {/* <div className="absolute -bottom-6 -right-6 bg-white p-4 shadow-lg rounded-lg w-40 h-40 flex flex-col justify-center items-center text-center hidden md:flex">
               <span className="text-restaurant-600 text-4xl font-bold">20+</span>
               <span className="text-gray-600">Years of Tradition</span>
-            </div>
+            </div> */}
           </div>
           
           {/* Text Side */}
