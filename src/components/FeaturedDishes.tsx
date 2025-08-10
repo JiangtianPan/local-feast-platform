@@ -66,8 +66,8 @@ const FeaturedDishes = () => {
                 />
               </div>
               <div className="p-6">
-                <div className="flex justify-between items-center mb-3">
-                  <h3 className="text-xl font-bold">{dish.name}</h3>
+                <div className="mb-3">
+                  <h3 className="text-xl font-bold mb-2">{dish.name}</h3>
                   <span className="text-restaurant-600 font-bold">${dish.price}</span>
                 </div>
                 <p className="text-gray-600 mb-4">{dish.description}</p>
