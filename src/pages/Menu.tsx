@@ -418,7 +418,7 @@ const Menu = () => {
                         className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
                       />
                     </div>
-                    <div className="p-4">
+                    <div className="p-4 text-center">
                       <div className="mb-2">
                         <h3 className="text-lg font-bold mb-1">{dish.name}</h3>
                         <span className="text-restaurant-600 font-bold">${dish.price}</span>

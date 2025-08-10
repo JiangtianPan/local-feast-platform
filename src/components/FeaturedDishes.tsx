@@ -65,16 +65,18 @@ const FeaturedDishes = () => {
                   className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 text-center">
                 <div className="mb-3">
                   <h3 className="text-xl font-bold mb-2">{dish.name}</h3>
                   <span className="text-restaurant-600 font-bold">${dish.price}</span>
                 </div>
                 <p className="text-gray-600 mb-4">{dish.description}</p>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-center">
                   <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
                     {dish.category}
                   </span>
+                </div>
+                <div className="flex justify-center items-center mt-4">
                   <Link to={`/menu`}>
                     {/* <Button className="bg-restaurant-600 hover:bg-restaurant-700 text-white">
                       Add to Cart
