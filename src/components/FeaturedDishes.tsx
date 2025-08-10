@@ -76,9 +76,9 @@ const FeaturedDishes = () => {
                     {dish.category}
                   </span>
                   <Link to={`/menu`}>
-                    <Button className="bg-restaurant-600 hover:bg-restaurant-700 text-white">
+                    {/* <Button className="bg-restaurant-600 hover:bg-restaurant-700 text-white">
                       Add to Cart
-                    </Button>
+                    </Button> */}
                   </Link>
                 </div>
               </div>
