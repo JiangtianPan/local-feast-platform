@@ -27,10 +27,10 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Sending contact email:", { name, email, subject });
 
-    // Send email to the restaurant's Gmail
+    // Send email to the specified Gmail address
     const emailResponse = await resend.emails.send({
       from: "Tea Bay Sweet Contact <onboarding@resend.dev>",
-      to: ["teabaysweeto@gmail.com"],
+      to: ["panjiangtian@gmail.com"],
       subject: `Contact Form: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
